@@ -162,19 +162,23 @@ footer {
   top: 20px;
 }
 .hero-text .hero-subtitle {
+  color: black;
   font-size: 45px;
   font-weight: 500;
   background: #ff9f40;
   border-radius: 20px;
   font-family: "Abril Fatface", cursive;
 }
-.hero-text p {
+.hero-text p1 {
+  color: white;
   font-size: 22px;
 }
 .p1 {
+  font-size: 20px;
   font-family: "Lato", sans-serif;
 }
 .p2 {
+  font-size: 20px;
   font-family: "Lato", sans-serif;
 }
 .hero-bttn {
