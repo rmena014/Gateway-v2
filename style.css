@@ -161,7 +161,7 @@ footer {
   padding: 0 300px;
   top: 20px;
 }
-.hero-text h2 {
+.hero-text .hero-subtitle {
   font-size: 45px;
   font-weight: 500;
   background: #ff9f40;
