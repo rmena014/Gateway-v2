@@ -9,6 +9,7 @@ body {
   padding: 0;
   font-family: serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 /*Nav Bar Styling */
 h1 {
@@ -79,7 +80,7 @@ img {
 .item img:hover {
   transform: scale(1.04);
 }
-.item h2 {
+h2 {
   width: 100%;
   padding: 5px;
   text-align: center;
@@ -112,7 +113,6 @@ a {
   transition: 0.3s ease;
   transform: scale(1.04);
 }
-
 /*footer styling */
 footer {
   margin: 0;
