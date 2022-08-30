@@ -112,20 +112,7 @@ a {
   transition: 0.3s ease;
   transform: scale(1.04);
 }
-/* Logo styling */
-.logo {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 135px;
-  height: 125px;
-  margin: 0px;
-  transition: 0.3s ease;
-}
-.logo:hover {
-  transform: scale(1.05);
-}
+
 /*footer styling */
 footer {
   margin: 0;
