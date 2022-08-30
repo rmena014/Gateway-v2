@@ -1,0 +1,340 @@
+/*
+px	Pixels size is calculated relative to the viewing device. For low dpi devices 1px is one dot in the display. For high-resolution screens, 1px may indicate multiple device pixels.
+%	Percentage value relative to any element. For example, 50% width of the container.
+rem	Relative to the font-size of the root element.
+vh	Measured as a percentage value of the viewport’s height. If the viewport height is 100cm then 1vh=1cm. */
+/*css has preset values so I reset them */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  box-sizing: border-box;
+}
+/*Nav Bar Styling */
+h1 {
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #cf4300;
+  padding: 20px;
+  background-color: transparent;
+  width: 100%;
+  transition: 0.5s ease;
+  font-family: "Abril Fatface", cursive;
+}
+h1:hover {
+  /*hover pseudo class selects elements when mouse is over the element */
+  transform: scale(1.1);
+}
+nav {
+  background-color: transparent;
+  display: grid;
+  place-items: end center;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul a {
+  display: inline-block;
+  /* inline block allows to set width and height of the element*/
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s ease;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+nav ul a:hover {
+  background-color: #ee7b30;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/*Menu Page Styling */
+.items {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*The grid-template-columns CSS property defines the line names and track sizing functions of the grid columns. Fr represents a fraction of available space in grid container*/
+  padding: 30px 20px;
+  grid-column-gap: 20px;
+  row-gap: 30px;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* object fit property sets how the content should fit in the container */
+  cursor: pointer;
+  /* sets the cursor to show when mouse is over item */
+  transition: 0.3s ease;
+  border-radius: 15px 50px 30px;
+  /* top right bottom left order */
+  box-shadow: 3px 5px 14px #b4b4b4;
+}
+.item img:hover {
+  transform: scale(1.04);
+}
+.item h2 {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+}
+.item p {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.item button {
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+}
+.item button:hover {
+  background-color: transparent;
+  color: orange;
+  transition: 0.3s ease;
+  transform: scale(1.04);
+}
+/* Logo styling */
+.logo {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 125px;
+  margin: 0px;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+/*footer styling */
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.social-links {
+  display: flex;
+  /* displays element as a flexible structure */
+  width: 300px;
+  height: 30px;
+  margin: auto;
+}
+.social-links ul {
+  display: flex;
+}
+.social-icons {
+  list-style: none;
+}
+.social-icons a {
+  padding: 10px 20px;
+  font-size: 35px;
+  color: orange;
+  transition: 0.3s ease;
+}
+.social-icons a:hover {
+  color: red;
+  transform: scale(1.5);
+}
+/*home page styling */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://d1ralsognjng37.cloudfront.net/2fe7f065-1243-4394-a8a1-f643c91d68da.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  /* 90 percent of the viewport height */
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+  padding: 0px 300px;
+  top: 20px;
+}
+.hero-text h2 {
+  font-size: 45px;
+  font-weight: 500;
+  background: #ff9f40;
+  border-radius: 20px;
+  font-family: "Abril Fatface", cursive;
+}
+.hero-text p {
+  font-size: 22px;
+}
+.p1 {
+  font-family: "Lato", sans-serif;
+}
+.p2 {
+  font-family: "Lato", sans-serif;
+}
+.hero-bttn {
+  text-decoration: none;
+  color: white;
+  background: red;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  transition: 0.3s ease;
+  font-size: 25px;
+}
+.hero-bttn:hover {
+  background: orange;
+}
+/* Order page styling */
+.container2::after {
+  content: "";
+  position: absolute;
+  top: 22%;
+  width: 100%;
+  height: 55%;
+  background-size: cover;
+  z-index: -1;
+  background: url("https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2019/10/SaborDominicano.jpg")
+    no-repeat center;
+  filter: blur(15px);
+}
+.order-form {
+  max-width: 350px;
+  margin: auto;
+  border-radius: 10px;
+  background: white;
+  padding: 20px;
+  border: solid orange;
+}
+
+input[type="text"],
+select {
+  /* Square Brackets are used as attribute selectors to select elements with a certain value */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+input[type="submit"] {
+  width: 100%;
+  background: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+input[type="submit"]:hover {
+  background: #ff8000;
+}
+/* Contact page styling */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+}
+.container::after {
+  /* after creates a pseudo-element that is the last child of the selected element */
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: url("https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2019/10/SaborDominicano.jpg")
+    no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(30px);
+}
+.contact-box {
+  border-radius: 25px;
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+.left {
+  height: 100%;
+  background: url("https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2019/10/SaborDominicano.jpg")
+    no-repeat center;
+  border-radius: 25px;
+  background-size: cover;
+}
+.right {
+  padding: 25px 40px;
+}
+.contact-text {
+  color: black;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.contact-text::after {
+  /* after creates a pseudo-element that is the last child of the selected element */
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  /* translateX affects the element on the x axis */
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: red;
+}
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  /* relative to the root element */
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bttn {
+  border-radius: 25px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: darkred;
+  font-size: 1.1rem;
+  background-color: orange;
+  cursor: pointer;
+}
