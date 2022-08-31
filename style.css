@@ -145,7 +145,7 @@ footer {
 /*home page styling */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://d1ralsognjng37.cloudfront.net/2fe7f065-1243-4394-a8a1-f643c91d68da.jpeg");
+    url("images/2fe7f065-1243-4394-a8a1-f643c91d68da.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,8 +204,7 @@ footer {
   height: 55%;
   background-size: cover;
   z-index: -1;
-  background: url("https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2019/10/SaborDominicano.jpg")
-    no-repeat center;
+  background: url("images/SaborDominicano.webp") no-repeat center;
   filter: blur(15px);
 }
 .order-form {
@@ -259,8 +258,7 @@ input[type="submit"]:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2019/10/SaborDominicano.jpg")
-    no-repeat center;
+  background: url("images/SaborDominicano.webp") no-repeat center;
   background-size: cover;
   z-index: -1;
   filter: blur(30px);
@@ -277,8 +275,7 @@ input[type="submit"]:hover {
 }
 .left {
   height: 100%;
-  background: url("https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2019/10/SaborDominicano.jpg")
-    no-repeat center;
+  background: url("images/SaborDominicano.webp") no-repeat center;
   border-radius: 25px;
   background-size: cover;
 }
